@@ -116,7 +116,7 @@ adawat-pro/
 ```javascript
 const ADSTERRA_CONFIG = {
   popunderCode: 'YOUR_ACTUAL_CODE',
-  notificationCode: 'YOUR_ACTUAL_CODE',
+  notificationCode: '<script type='text/javascript' src='//pl27877346.effectivegatecpm.com/ba/ba/4a/baba4a29215fc542544bef4c4c7f1674.js'></script>',
   bannerCode: 'YOUR_ACTUAL_CODE'
 };
 ```
