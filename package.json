@@ -1,0 +1,20 @@
+{
+  "name": "adawat-pro",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["أدوات", "تطبيقات", "مجاني", "عربي", "Adsterra", "إعلانات"],
+  "author": "أدوات برو",
+  "license": "MIT",
+  "description": "موقع متخصص في تقديم أدوات مجانية وتطبيقات مفيدة للمستخدمين العرب مع دمج إعلانات ذكية من Adsterra",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}

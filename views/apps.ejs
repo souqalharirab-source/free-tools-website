@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<%= description %>">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>تحميل التطبيقات 📱</h1>
+        <p>أحدث التطبيقات والألعاب للهواتف الذكية بروابط مباشرة وآمنة</p>
+      </div>
+    </section>
+
+    <!-- Apps Categories -->
+    <section class="container" style="margin-top: 3rem;">
+      <h2 style="text-align: center; color: #2563eb; margin-bottom: 2rem;">فئات التطبيقات</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🎮</div>
+          <h3>الألعاب</h3>
+          <p>أحدث الألعاب والألعاب المعدلة برسوميات عالية</p>
+          <a href="#games" class="btn-primary">استعرض الألعاب</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📸</div>
+          <h3>تطبيقات التصوير</h3>
+          <p>تطبيقات تحرير الصور والفيديو الاحترافية</p>
+          <a href="#camera" class="btn-primary">استعرض التطبيقات</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🎵</div>
+          <h3>تطبيقات الموسيقى</h3>
+          <p>تطبيقات الموسيقى والبث الموسيقي المجاني</p>
+          <a href="#music" class="btn-primary">استعرض التطبيقات</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>تطبيقات الإنتاجية</h3>
+          <p>تطبيقات تساعدك على إنجاز مهامك بكفاءة</p>
+          <a href="#productivity" class="btn-primary">استعرض التطبيقات</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔒</div>
+          <h3>تطبيقات الأمان</h3>
+          <p>تطبيقات الحماية والأمان والخصوصية</p>
+          <a href="#security" class="btn-primary">استعرض التطبيقات</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>تطبيقات التصفح</h3>
+          <p>متصفحات الويب والتطبيقات الاجتماعية</p>
+          <a href="#browser" class="btn-primary">استعرض التطبيقات</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ads Section -->
+    <div class="container" style="margin-top: 3rem;">
+      <div class="ads-container">
+        <div class="ads-label">إعلان</div>
+        <div id="adsterra-ad-apps" style="min-height: 250px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px;">
+          <p style="color: #9ca3af;">مساحة إعلانية</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Apps -->
+    <section class="container" style="margin-top: 3rem;">
+      <h2 style="text-align: center; color: #2563eb; margin-bottom: 2rem;">التطبيقات المميزة</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>WhatsApp Plus</h3>
+          <p style="color: #9ca3af; font-size: 0.9rem;">نسخة معدلة من واتس آب</p>
+          <p>تطبيق واتس آب معدل مع ميزات إضافية</p>
+          <div style="margin: 1rem 0;">
+            <span style="background-color: #e0f2fe; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">أندرويد</span>
+          </div>
+          <a href="#" class="btn-primary" style="width: 100%; text-align: center;">تحميل</a>
+        </div>
+
+        <div class="card">
+          <h3>Instagram Pro</h3>
+          <p style="color: #9ca3af; font-size: 0.9rem;">نسخة معدلة من إنستاجرام</p>
+          <p>إنستاجرام بدون حدود مع ميزات بريميوم</p>
+          <div style="margin: 1rem 0;">
+            <span style="background-color: #e0f2fe; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">أندرويد</span>
+          </div>
+          <a href="#" class="btn-primary" style="width: 100%; text-align: center;">تحميل</a>
+        </div>
+
+        <div class="card">
+          <h3>Telegram X</h3>
+          <p style="color: #9ca3af; font-size: 0.9rem;">نسخة معدلة من تليجرام</p>
+          <p>تطبيق تليجرام بميزات متقدمة وتخصيص كامل</p>
+          <div style="margin: 1rem 0;">
+            <span style="background-color: #e0f2fe; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">أندرويد</span>
+          </div>
+          <a href="#" class="btn-primary" style="width: 100%; text-align: center;">تحميل</a>
+        </div>
+
+        <div class="card">
+          <h3>Adobe Lightroom</h3>
+          <p style="color: #9ca3af; font-size: 0.9rem;">تطبيق تحرير الصور</p>
+          <p>محرر صور احترافي مع أدوات قوية</p>
+          <div style="margin: 1rem 0;">
+            <span style="background-color: #e0f2fe; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">أندرويد</span>
+            <span style="background-color: #fce7f3; color: #be185d; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; margin-right: 0.5rem;">آيفون</span>
+          </div>
+          <a href="#" class="btn-primary" style="width: 100%; text-align: center;">تحميل</a>
+        </div>
+
+        <div class="card">
+          <h3>VLC Media Player</h3>
+          <p style="color: #9ca3af; font-size: 0.9rem;">مشغل الوسائط</p>
+          <p>مشغل فيديو وصوت قوي وسريع</p>
+          <div style="margin: 1rem 0;">
+            <span style="background-color: #e0f2fe; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">أندرويد</span>
+            <span style="background-color: #fce7f3; color: #be185d; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; margin-right: 0.5rem;">آيفون</span>
+          </div>
+          <a href="#" class="btn-primary" style="width: 100%; text-align: center;">تحميل</a>
+        </div>
+
+        <div class="card">
+          <h3>Spotify Premium</h3>
+          <p style="color: #9ca3af; font-size: 0.9rem;">تطبيق الموسيقى</p>
+          <p>استمع إلى ملايين الأغاني بدون إعلانات</p>
+          <div style="margin: 1rem 0;">
+            <span style="background-color: #e0f2fe; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">أندرويد</span>
+            <span style="background-color: #fce7f3; color: #be185d; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; margin-right: 0.5rem;">آيفون</span>
+          </div>
+          <a href="#" class="btn-primary" style="width: 100%; text-align: center;">تحميل</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ads Section 2 -->
+    <div class="container" style="margin-top: 3rem;">
+      <div class="ads-container">
+        <div class="ads-label">إعلان</div>
+        <div id="adsterra-ad-apps-2" style="min-height: 250px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px;">
+          <p style="color: #9ca3af;">مساحة إعلانية</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+
+  <script src="/js/adsterra.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
+
