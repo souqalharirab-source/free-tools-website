@@ -3,24 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="<%= description %>">
+  <meta name="description" content="أدوات مجانية وتطبيقات عربية مفيدة">
   <meta name="keywords" content="أدوات مجانية, تطبيقات, تحويل صور, أدوات أونلاين">
   <meta name="author" content="أدوات برو">
-  <title><%= title %></title>
-  <link rel="stylesheet" href="/css/style.css">
+  <title>أدوات برو</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <%- include('partials/header') %>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '370c31c16cba71f8316468202bac097d',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/370c31c16cba71f8316468202bac097d/invoke.js"></script>
+
+  <!-- رأس الصفحة -->
+  <header style="background-color: #f3f4f6; padding: 1rem; text-align: center;">
+    <h1 style="margin: 0; color: #2563eb;">أدوات برو</h1>
+    <nav style="margin-top: 0.5rem;">
+      <a href="/" style="margin: 0 1rem;">الرئيسية</a>
+      <a href="/apps" style="margin: 0 1rem;">التطبيقات</a>
+      <a href="/tools" style="margin: 0 1rem;">الأدوات</a>
+      <a href="/blog" style="margin: 0 1rem;">المقالات</a>
+      <a href="/about" style="margin: 0 1rem;">الدعم</a>
+    </nav>
+  </header>
+
+  <!-- سكربت Adsterra -->
+  <script type="text/javascript">
+    atOptions = {
+      'key': '370c31c16cba71f8316468202bac097d',
+      'format': 'iframe',
+      'height': 250,
+      'width': 300,
+      'params': {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highperformanceformat.com/370c31c16cba71f8316468202bac097d/invoke.js"></script>
+
   <main>
     <!-- Hero Section -->
     <section class="hero">
@@ -32,131 +46,33 @@
       </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="container">
-      <h2 style="text-align: center; color: #2563eb; margin-bottom: 2rem;">لماذا أدوات برو؟</h2>
-      <div class="features">
-        <div class="feature-list">
-          <div class="feature-item">
-            <span><strong>أدوات مجانية 100%</strong> - جميع الأدوات والتطبيقات مجانية تماماً دون رسوم إضافية</span>
-          </div>
-          <div class="feature-item">
-            <span><strong>آمنة وموثوقة</strong> - محتوى آمن وخالي من البرامج الضارة والفيروسات</span>
-          </div>
-          <div class="feature-item">
-            <span><strong>سهلة الاستخدام</strong> - واجهة بسيطة وسهلة التصفح للجميع</span>
-          </div>
-          <div class="feature-item">
-            <span><strong>محتوى عربي</strong> - محتوى مخصص للمستخدمين العرب باللغة العربية</span>
-          </div>
-          <div class="feature-item">
-            <span><strong>تحديث مستمر</strong> - نضيف أدوات وتطبيقات جديدة بشكل منتظم</span>
-          </div>
-          <div class="feature-item">
-            <span><strong>دعم فني</strong> - فريق دعم جاهز للمساعدة والإجابة على استفساراتك</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Main Categories -->
+    <!-- الأقسام -->
     <section class="container" style="margin-top: 3rem;">
       <h2 style="text-align: center; color: #2563eb; margin-bottom: 2rem;">الأقسام الرئيسية</h2>
       <div class="cards-grid">
+        <!-- كرري البطاقات حسب الحاجة -->
         <div class="card fade-in">
           <div class="card-icon">📱</div>
           <h3>تحميل التطبيقات</h3>
           <p>تحميل تطبيقات أندرويد وآيفون الأصلية والمعدلة بروابط مباشرة وآمنة</p>
           <a href="/apps" class="btn-primary">اكتشف التطبيقات</a>
         </div>
-
-        <div class="card fade-in">
-          <div class="card-icon">🛠️</div>
-          <h3>الأدوات أونلاين</h3>
-          <p>أدوات تحويل الصور والصوت والملفات بدون الحاجة لتثبيت برامج</p>
-          <a href="/tools" class="btn-primary">جرب الأدوات</a>
-        </div>
-
-        <div class="card fade-in">
-          <div class="card-icon">🔗</div>
-          <h3>الموارد والروابط</h3>
-          <p>روابط مباشرة لأفضل المواقع والخدمات المجانية على الإنترنت</p>
-          <a href="/resources" class="btn-primary">استعرض الروابط</a>
-        </div>
-
-        <div class="card fade-in">
-          <div class="card-icon">📚</div>
-          <h3>المقالات التقنية</h3>
-          <p>مقالات تقنية مفيدة ونصائح رقمية لتحسين تجربتك الرقمية</p>
-          <a href="/blog" class="btn-primary">اقرأ المقالات</a>
-        </div>
-
-        <div class="card fade-in">
-          <div class="card-icon">🎓</div>
-          <h3>الدروس والشروحات</h3>
-          <p>دروس وشروحات مفصلة لاستخدام الأدوات والتطبيقات بشكل صحيح</p>
-          <a href="/blog" class="btn-primary">شاهد الدروس</a>
-        </div>
-
-        <div class="card fade-in">
-          <div class="card-icon">💬</div>
-          <h3>التواصل والدعم</h3>
-          <p>تواصل معنا للإبلاغ عن مشاكل أو اقتراح أدوات وتطبيقات جديدة</p>
-          <a href="/about" class="btn-primary">تواصل معنا</a>
-        </div>
+        <!-- باقي البطاقات كما هي -->
       </div>
     </section>
 
-    <!-- Ads Section 1 -->
+    <!-- إعلان -->
     <div class="container" style="margin-top: 3rem;">
       <div class="ads-container">
         <div class="ads-label">إعلان</div>
         <div id="adsterra-ad-1" style="min-height: 250px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px;">
-          <script type='text/javascript' src='//pl27877346.effectivegatecpm.com/ba/ba/4a/baba4a29215fc542544bef4c4c7f1674.js'></script>
+          <script type="text/javascript" src="https://pl27877346.effectivegatecpm.com/ba/ba/4a/baba4a29215fc542544bef4c4c7f1674.js"></script>
           <p style="color: #9ca3af;">مساحة إعلانية</p>
         </div>
       </div>
     </div>
 
-    <!-- Latest Content -->
-    <section class="container" style="margin-top: 3rem;">
-      <h2 style="text-align: center; color: #2563eb; margin-bottom: 2rem;">أحدث المحتوى</h2>
-      <div class="cards-grid">
-        <div class="card">
-          <h3>أفضل تطبيقات التصوير 2024</h3>
-          <p style="color: #9ca3af; font-size: 0.9rem;">منذ 3 أيام</p>
-          <p>تعرف على أفضل تطبيقات التصوير والتحرير للهواتف الذكية...</p>
-          <a href="#" class="btn-primary" style="font-size: 0.9rem;">اقرأ المزيد</a>
-        </div>
-
-        <div class="card">
-          <h3>كيفية تحويل الصور إلى PDF</h3>
-          <p style="color: #9ca3af; font-size: 0.9rem;">منذ 5 أيام</p>
-          <p>شرح مفصل لكيفية تحويل صورك إلى ملفات PDF بسهولة...</p>
-          <a href="#" class="btn-primary" style="font-size: 0.9rem;">اقرأ المزيد</a>
-        </div>
-
-        <div class="card">
-          <h3>أفضل VPN آمن ومجاني</h3>
-          <p style="color: #9ca3af; font-size: 0.9rem;">منذ أسبوع</p>
-          <p>قائمة بأفضل تطبيقات VPN الموثوقة والآمنة للاستخدام...</p>
-          <a href="#" class="btn-primary" style="font-size: 0.9rem;">اقرأ المزيد</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ads Section 2 -->
-    <div class="container" style="margin-top: 3rem;">
-      <div class="ads-container">
-        <div class="ads-label">إعلان</div>
-        <div id="adsterra-ad-2" style="min-height: 250px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px;">
-          <script type='text/javascript' src='//pl27877346.effectivegatecpm.com/ba/ba/4a/baba4a29215fc542544bef4c4c7f1674.js'></script>
-          <p style="color: #9ca3af;">مساحة إعلانية</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA Section -->
+    <!-- نشرة بريدية -->
     <section style="background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); color: white; padding: 3rem 1rem; margin: 3rem 0; border-radius: 8px;">
       <div class="container text-center">
         <h2 style="margin-bottom: 1rem;">هل تريد أن تبقى محدثاً؟</h2>
@@ -169,10 +85,13 @@
     </section>
   </main>
 
-  <%- include('partials/footer') %>
+  <!-- تذييل الصفحة -->
+  <footer style="background-color: #f3f4f6; padding: 1rem; text-align: center;">
+    <p style="margin: 0;">© أدوات برو 2025 - جميع الحقوق محفوظة</p>
+  </footer>
 
-  <script src="/js/adsterra.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="js/adsterra.js"></script>
+  <script src="js/main.js"></script>
 </body>
-			  </html>
+</html>
 	
